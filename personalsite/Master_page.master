@@ -1,0 +1,82 @@
+﻿<%@ Master Language="VB" CodeFile="Master_page.master.vb" Inherits="Master_page" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/menu_toggle.js"></script>
+
+<title>Eric Swetts | Public Health Data Analyst</title>
+
+</head>
+
+<body class="background_image">
+
+<!-- Content Placeholder for Index Page Only -->  
+    <asp:ContentPlaceHolder ID="index_carousel" runat="server"> </asp:ContentPlaceHolder>
+
+<!-- Navigation Menu Start -->  
+    <form>
+
+    <div>
+         <i class="fa fa-bars toggle_menu opacity_one"></i>
+                   <div class="sidebar_menu hide_menu">
+                       <i class="fa fa-times"></i>
+                       <center>
+                           <a href="index.aspx">
+                           <img src="images/logo_lg.png" class="sidebar_header boxed_item_nosides">
+                           </a>
+                           
+                           <h2 class="logo_title">Data Scientist and
+                               <br><span class="logo_bold">Public Health Nerd</span> </h2>
+                       </center>
+                       <ul class="navigation_section">
+                           <li class="navigation_item" id="profile"><a href="index.aspx">ABOUT ME</a></li>
+                           <li class="navigation_item" id="education"><a href="education.aspx">EDUCATION</a> </li>
+                           <li class="navigation_item" id="work_experience"> <a href="Work_history.aspx">WORK HISTORY</a> </li>
+                           <li class="navigation_item" id="portfolio"> <a href="Portfolio.aspx">PORTFOLIO </a> </li>
+                           <li class="navigation_item" id="skills"><a href="Skills.aspx"> SKILLS</a> </li>
+
+                             
+                       </ul>
+                    
+      
+    </div>
+        </div>
+        </form>
+<!-- Navigation Area End -->  
+
+<!-- Content Area Header -->
+<asp:ContentPlaceHolder ID="contentheader" runat="server"></asp:ContentPlaceHolder> 
+
+
+
+ <!-- Content Area Body -->
+    <div class="container-fluid"> <div class="row row_eq_height">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <asp:ContentPlaceHolder ID="maincontent" runat="server">
+    </asp:ContentPlaceHolder>
+    </div> </div> </div>  
+
+        
+
+ <!-- Footer text-->    
+<div class="footer_text"> &copy; 2017 by Eric Swetts </div>
+<!-- JS Declarations--> 
+<script src="js/close_menu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    
+
+</body>
+
+</html>
