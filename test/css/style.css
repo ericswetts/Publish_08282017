@@ -1,0 +1,336 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.fa-times {
+    right: 10px;
+    top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+    .fa-times:hover {
+        opacity: 1;
+    }
+
+.sidebar_menu {
+    position: fixed;
+    width: 250px;
+    margin-left: 0;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #1E2436;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.hide_menu {
+    margin-left: -250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle_menu {
+    position: fixed;
+    padding: 15px 20px 15px 15px;
+    margin-top: 70px;
+    color: white;
+    cursor: pointer;
+    background-color: #9ec6a9;
+    opacity: 0;
+    z-index: 5;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.opacity_one {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle_menu:hover {
+    background-color: #1E2436;
+    transition: all 0.2s ease-in-out;
+}
+
+.boxed_item {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 2px white;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.logo_bold {
+    font-weight: 800;
+}
+
+.logo_title {
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.menu_close {
+    color: #D8D8D8;
+    position: absolute;
+    right: 8px;
+    opacity: 0.7;
+    top: 6px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+}
+
+    .menu_close:hover {
+        color: #FE4365;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+
+.navigation_section {
+    margin: 20px 0;
+    display: block;
+    width: 200px;
+    margin-left: 25px;
+}
+
+.navigation_section > li {
+    font-weight: 200;
+    font-family: 'Open Sans';
+    padding: 12px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #9EC6A9;
+    border-bottom: solid 1px #D8D8D8;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+    .navigation_item:hover {
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+.boxed_item_smaller {
+    font-size: 12px;
+    color: #D8D8D8;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-width: 1px;
+    margin: 0 0 20px 0;
+}
+
+    .boxed_item_smaller:hover {
+        background-color: white;
+        color: #111;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+.sidebar_header {
+    width: 180px;
+}
+
+.boxed_item_nosides {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    border: solid 2px white;
+    border-width: 2px 0 2px 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.boxed_item_nosides{
+	font-family: 'Open Sans';
+	font-weight: 200;
+	padding: 10px;
+	width:200px;
+	display: inline-block;
+	border: solid 2px white;
+	border-width: 2px 0 2px 0;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+}
+
+
+.carousel-control.left {margin-left: 250px; color: black;}
+.carousel-control.right {margin-right: 250px; color: black;}
+
+.main_content{
+   margin-left:250px;
+   margin-bottom:15px;
+}
+
+.footer_text {
+    text-align: left;
+    background-color: #9ec6a9;
+    padding: 5px 5px 5px 20px;
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    border-top:solid #1E2436 1px;
+    margin: 0 -15px 0 -15px;
+}
+
+.carousel_pic {
+    max-height: 80vh !important;
+    width: 100%;
+    align-content: center;
+    border-bottom: 1px #1E2436 outset;
+    z-index:2;
+}
+
+
+.carousel_text_box {
+    float: none;
+    margin-bottom:50px;
+    padding: 10px 10px 10px 10px;
+}
+
+/*Custom Carousel CSS*/
+.carousel { 
+z-index:-2;
+}
+
+.ct {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 5px 20px 30px;
+    text-align: justify;
+    text-wrap: normal;
+    line-height: 1.6em;
+    background-color: #F1F2ED !important;
+    padding-top: 1em;
+    border-left: 2px solid #1E2436;
+    border-bottom: 2px solid #1E2436;
+    border-right: 2px solid #1E2436;
+}
+
+
+.ct l {
+    color: #9ec6a9;
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 5em;
+    line-height: 0.5em;
+    padding-top: .25em;
+    padding-right: .1em;
+    margin-left: -.1em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    }
+
+.h {
+    border-top: 2px solid #F1F2ED;
+    background-color: #1E2436;
+    height: 46px;
+    color: #F0F1EB !important;
+    padding-left: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header_spacer {
+    padding-top:15vh;
+}
+
+.index.aspx #right {
+    display: none;
+}
+.icon_images {
+    max-height: 70px;
+    padding: 0 20px 10px 20px;
+    background-color: #F1F2ED;
+}
+
+.background_image{
+    background-image:url("/images/city-sm.jpg");
+}
+
+.icon_images_lg {
+    max-height: 100px;
+    padding: 20px 40px 10px 10px;
+}
+
+/*For Indenting lists*/
+.ul {
+    list-style: disc inside none;
+    padding: 0 0 0 30px;
+}
+
+.pop {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 3px 3px 3px 3px;
+    list-style: disc inside none;
+    padding: 10px;
+}
+
+.home_img {
+    border-bottom: 2px #9ec6a9 solid;
+    z-index: -4;
+    position: relative;
+    max-height: 60vh;
+    overflow-y: hidden;
+}
+
+.home_txt {
+z-index:-2;
+padding: 0 10vw 0 10vw;
+background-color: #FFFFFF;
+position: absolute;
+}
+
+.h_index{
+    background-color: #1E2436;
+    color: #F0F1EB !important;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer_spacer {
+    padding-bottom: 10vh;
+}
